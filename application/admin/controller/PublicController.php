@@ -5,7 +5,7 @@ namespace app\admin\controller;
 use think\Controller;
 class PublicController extends Controller
 {
-	// 添加点东西
+	// 添加点东西, 再加
 	public function login(){
 		return $this->fetch();
 	}
