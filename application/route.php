@@ -23,6 +23,11 @@
 // think从thinkphp/library/目录下面找起
 use think\Route;
 // 定义路由规则
+// 测试路由
+Route::get('admin/test/index', 'admin/test/index');
+Route::get('admin/test/index2', 'admin/test/index2');
+Route::any('admin/test/index3', 'admin/test/index3');
+
 
 // 定义网站根目录路由
 Route::get('/', 'admin/index/index');
@@ -31,4 +36,8 @@ Route::get('top', 'admin/index/top');
 Route::get('left', 'admin/index/left');
 Route::get('main', 'admin/index/main');
 // 后天登录页路由
+Route::post('login', 'admin/public/login');
 Route::get('login', 'admin/public/login');
+Route::get('logout', 'admin/public/logout');
+
+

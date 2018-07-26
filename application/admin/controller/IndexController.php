@@ -3,7 +3,7 @@
 namespace app\admin\controller;
 // 引入父类控制器
 use think\Controller;
-class IndexController extends Controller
+class IndexController extends CommonController
 {
 	public function index(){
 		// 渲染出视图

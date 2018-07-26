@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST</title>
+</head>
+<body>
+	<h3>测试模板</h3>
+	跳转测试:<a href="{:url('admin/test/index2',['id'=>21,'name'=>'maoxian'])}">跳到admin/test/index2方法</a><hr>
+	<form action="{:url('admin/test/index3')}" method="post">
+		爱好:
+		<input type="checkbox" name="ids[]" value="1"> 篮球
+		<input type="checkbox" name="ids[]" value="2"> 足球
+		<input type="checkbox" name="ids[]" value="3"> 打波
+		<br>
+		用户名: <input type="test" name="username"> <br>
+		邮箱: <input type="text" name="email">
+		<input type="submit" name="" value="提交">
+	</form>
+</body>
+</html>
