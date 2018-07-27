@@ -35,9 +35,26 @@ Route::get('/', 'admin/index/index');
 Route::get('top', 'admin/index/top');
 Route::get('left', 'admin/index/left');
 Route::get('main', 'admin/index/main');
-// 后天登录页路由
+// 后台登录页路由
 Route::post('login', 'admin/public/login');
 Route::get('login', 'admin/public/login');
 Route::get('logout', 'admin/public/logout');
+
+// 后台路由组
+Route::group('admin', function() {
+	// 分类管理相关路由
+   	Route::get('category/add', 'admin/category/add');
+   	Route::post('category/add', 'admin/category/add');
+   	Route::get('category/index', 'admin/category/index');
+   	Route::get('category/upd', 'admin/category/upd');
+	Route::post('category/upd', 'admin/category/upd');
+   	Route::get('category/ajaxDel', 'admin/category/ajaxDel');
+   	// 文章数据操作相关路由
+   	Route::get('article/add', 'admin/article/add'); // 展示添加文章的视图的路由
+   	Route::post('article/add', 'admin/article/add'); // 完成添加文章入库的路由
+
+});
+
+
 
 

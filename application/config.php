@@ -14,10 +14,27 @@ return [
     // | 应用设置
     // +----------------------------------------------------------------------
 
+    // 验证码的配置
+    'captcha'=>[
+        'codeSet' => '123456789',
+        // 验证码字体大小(px)
+        'fontSize' => 16,
+        // 是否画混淆曲线
+        'useCurve' => true,
+        // 是否添加杂点
+        'useNoise' => true,
+        // 验证码图高度
+        'imageH' => 50,
+        // 验证码图片宽度
+        'imageW' => 150,
+        // 显示字符数
+        'length' => 4, 
+    ],
+
     // 密码的加密盐
     'password_salt' => '^&*(*(*^JJ',
     // 定义后台资源目录路径
-    'admin_static'           => 'static/admin',
+    'admin_static'           => '/static/admin',
     // 应用调试模式
     'app_debug'              => true,
     // 应用Trace
