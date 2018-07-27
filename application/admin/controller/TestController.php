@@ -13,6 +13,7 @@ class TestController extends Controller
 		echo 'dev';
 		echo 'master';
 		echo 'master2';
+		echo 'devdevdev';
 		echo md5("123456".config('paasword_salt'));die;
 	}
 	// public function model(){
