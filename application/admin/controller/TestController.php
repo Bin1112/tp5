@@ -10,6 +10,7 @@ class TestController extends Controller
 { 
 
 	public function model(){
+		echo 'dev';
 		echo md5("123456".config('paasword_salt'));die;
 	}
 	// public function model(){
