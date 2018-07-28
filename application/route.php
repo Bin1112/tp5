@@ -50,6 +50,11 @@ Route::group('admin', function() {
 	Route::post('category/upd', 'admin/category/upd');
    	Route::get('category/ajaxDel', 'admin/category/ajaxDel');
    	// 文章数据操作相关路由
+      Route::get('article/getContent', 'admin/article/getContent'); // 查看文章内容的路由
+      Route::get('article/del', 'admin/article/del'); // 文章删除的路由
+      Route::post('article/upd', 'admin/article/upd'); // 文章编辑实现入库的路由
+      Route::get('article/upd', 'admin/article/upd'); // 文章编辑回显到视图的路由
+      Route::get('article/index', 'admin/article/index'); // 展示文章列表使徒的路由
    	Route::get('article/add', 'admin/article/add'); // 展示添加文章的视图的路由
    	Route::post('article/add', 'admin/article/add'); // 完成添加文章入库的路由
 
